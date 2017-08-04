@@ -23,6 +23,9 @@ export default {
             test: /\.jsx?$/,
             loaders: ['babel-loader'],
             exclude: /node_modules/
+        }, {
+            test: /\.s?css$/,
+            loaders: ['style-loader', 'css-loader']
         }]
     }
 }
