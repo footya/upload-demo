@@ -1,3 +1,6 @@
+/**
+ * from 表单提交服务端
+ */
 import express from 'express';
 import multer from 'multer'; // for parsing multipart/form-data
 import bodyParser from 'body-parser';
@@ -36,5 +39,4 @@ app.get('/form', (req, res) => {
 });
 app.listen(3000, function() {
     console.log('Example app listening on port 3000!')
-
 });

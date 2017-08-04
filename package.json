@@ -4,6 +4,7 @@
   "description": "upload demo for web",
   "main": "index.js",
   "scripts": {
+    "react": "babel-node ./server/server.js",
     "start": "babel-node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,9 +12,19 @@
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.24.1",
+    "babel-loader": "^7.1.1",
     "babel-preset-env": "^1.6.0",
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
-    "multer": "^1.3.0"
+    "multer": "^1.3.0",
+    "webpack": "^3.4.1",
+    "webpack-dev-middleware": "^1.12.0",
+    "webpack-hot-middleware": "^2.18.2"
+  },
+  "dependencies": {
+    "babel-preset-react": "^6.24.1",
+    "rc-upload": "^2.4.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
   }
 }
